@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+/* Right side of the page */
+div.title {
+    background-image: url(jonathan-kemper-uDFBLP7cJlA-unsplash.jpg);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+div.title > div {
+    background: rgba(26, 26, 26, 0.734);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 550px;
+}
+
+div > img {
+    height: 5rem;
+}
+
+div.title > p {
+    margin-bottom: 20px;
+}
+
+div.title > p > a {
+    text-decoration: underline;
+    color: white;
+}
