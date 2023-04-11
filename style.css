@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("./Norse-Bold.otf");
+  }
 
 body {
     display: flex;
@@ -12,12 +19,17 @@ body {
 div.title {
     background-image: url(jonathan-kemper-uDFBLP7cJlA-unsplash.jpg);
     height: 100vh;
-    width: 50vw;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     color: white;
+}
+
+div.title > div > h2 {
+    font-size: 5rem;
+    font-family: "Norse Bold";
 }
 
 div.title > div {
@@ -68,7 +80,28 @@ div.content > div.middle {
 }
 
 div.middle > form {
-    margin: 15px 10px 10px 0 ;
+    margin: 15px 10px 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+    gap: 1rem;
+    font-size: 0.66em;
+    text-transform: uppercase;
+}
+
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+input:invalid:focus {
+    border: 2px solid red;
 }
 
 div.bottom > button {
@@ -85,6 +118,10 @@ div.bottom > button {
 div.bottom > h4 > a {
     text-decoration: none;
     color: #717709;
+}
+
+div.bottom > button:hover {
+    background: #29331B;
 }
 
 div.bottom > h4 > a:hover {
