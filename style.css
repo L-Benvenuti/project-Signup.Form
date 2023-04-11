@@ -8,11 +8,11 @@ body {
     display: flex;
 }
 
-/* Right side of the page */
+/* Left side of the page */
 div.title {
     background-image: url(jonathan-kemper-uDFBLP7cJlA-unsplash.jpg);
     height: 100vh;
-    width: 100vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,7 @@ div.title > div {
     justify-content: center;
     width: 100%;
     padding: 10px 0;
-    margin-bottom: 550px;
+    margin-bottom: 510px;
 }
 
 div > img {
@@ -41,4 +41,52 @@ div.title > p {
 div.title > p > a {
     text-decoration: underline;
     color: white;
+}
+
+/* Right side of the page */
+div.content {
+    background: rgba(235, 232, 232, 0.893);
+}
+
+div.top,
+div.middle,
+div.bottom {
+    padding: 0 20vh 0 5vh;
+}
+
+div.content > div.top {
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
+div.content > div.middle {
+    background: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 5px -1px rgba(188, 188, 188, 0.623);
+}
+
+div.middle > form {
+    margin: 15px 10px 10px 0 ;
+}
+
+div.bottom > button {
+    background: #717709;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 50px;
+    color: white;
+    box-shadow: 2px 5px 8px rgba(161, 161, 161, 0.556);
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+div.bottom > h4 > a {
+    text-decoration: none;
+    color: #717709;
+}
+
+div.bottom > h4 > a:hover {
+    color: #BE8B6E;
 }
